@@ -30,7 +30,40 @@ DataSearcher provides powerful tools for indexing, collecting statistics, and ra
 
 DataSearcher requires **Python 3.8 or higher**.
 
-### Prerequisites & Setup
+---
+
+### 📦 Installation via Git Clone (Recommended)
+
+1. Clone the repository:
+```bash
+git clone https://github.com/chematic/datasearcher.git
+```
+
+2. Move into the project directory:
+```bash
+cd "datasearcher/Data Searcher"
+```
+
+3. Install dependencies:
+
+**Windows**
+```bash
+requirements.bat
+```
+
+**Linux / macOS**
+```bash
+pip install pystyle requests
+```
+
+4. Launch the program:
+```bash
+python main.py
+```
+
+---
+
+### ⚙️ Alternative Setup (Without Git)
 
 #### A. Recommended (Windows)
 
@@ -103,7 +136,8 @@ Ensure your system has sufficient available memory.
 ## 🛡️ License & Ownership Warning
 
 **Ownership**  
-The DataSearcher tool and all its internal fragments are the exclusive property of **@azunoo (Discord / Unique ID: 1400529025239220236)**.
+The DataSearcher tool and all its internal fragments are the exclusive property of  
+**@azunoo (Discord / Unique ID: 1400529025239220236)**.
 
 **Restrictions**
 
@@ -112,7 +146,7 @@ The DataSearcher tool and all its internal fragments are the exclusive property 
 
 ---
 
-**Auto Updater Notice**
+**Auto Updater Notice**  
 `c.py` will not modify the source code itself, at least for the time being.
 
 ---
