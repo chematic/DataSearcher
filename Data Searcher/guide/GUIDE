@@ -1,0 +1,50 @@
+DATASEARCHER - SIMPLE GUIDE
+
+1. SETUP
+
+This tool requires Python 3.8 or newer.
+
+--- INSTALLATION ---
+
+Windows (Recommended):
+1. Run the 'requirements.bat' file.
+2. It will install Python and the necessary modules (pystyle, requests) automatically.
+
+Manual Install (Linux/macOS):
+Run this command:
+pip install pystyle requests
+
+--- DATA PREPARATION ---
+
+1. Place ALL your data files (logs, texts) inside the:
+   data/datums/ folder.
+
+2. Results will be saved automatically to the:
+   data/saves/ folder.
+
+2. HOW TO USE
+
+Launch the tool:
+python main.py
+
+A. Start:
+   - The tool checks for updates and displays the total size of your data.
+
+B. Search:
+   - Enter your keyword (e.g., an email address).
+   - Choose a scan method (e.g., 'A' for Auto Mode).
+
+C. Save Results:
+   - After the scan, it asks: "do u want to save all results to data/saves? (Y/N) >>"
+   - Type 'Y' to save all findings to a timestamped file in the data/saves folder.
+
+3. LICENCE AND OWNERSHIP WARNING
+
+Ownership: The DataSearcher tool and all its code fragments (main.py, modules in data/utilities/) belong exclusively to **@azunoo / @ on Discord**.
+
+YOU MUST NOT:
+- Edit the source code without permission.
+- Claim ownership or re-distribute the tool as your own work.
+- Remove this ownership header.
+
+Any violation will result in the immediate termination of your usage rights.

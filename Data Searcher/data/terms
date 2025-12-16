@@ -1,0 +1,23 @@
+DataSearcher Software - TERMS OF USE AGREEMENT
+
+By using this software, you agree to these terms.
+
+1. LICENSE RESTRICTIONS
+The software's internal code structure is fixed and critical. Changing it will cause permanent errors.
+
+2. OWNERSHIP AND REDISTRIBUTION:
+- DO NOT claim authorship, creation, or ownership of this software. The original author retains all rights.
+- DO NOT copy, resell, or redistribute this software to any third party.
+
+3. CRITICAL WARNINGS (DO NOT VIOLATE)
+
+A. CORE SYSTEM FRAGMENTS:
+- DO NOT change function names like d, c, a, s, or m. These names are linked across all files.
+- DO NOT rename or move any folders inside the 'data/utilities/' structure. File paths are fixed.
+- DO NOT delete the 'VERSION' file. It manages updates.
+
+B. UPDATE SYSTEM:
+- DO NOT modify the GitHub API URL in c.py. This link is hardcoded for official updates.
+- DO NOT change the name of the update files you attach to a GitHub release (e.g., 'm.py' must stay 'm.py').
+
+Violation of these terms will immediately disable the software.
