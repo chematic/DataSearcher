@@ -9,11 +9,11 @@ DataSearcher provides powerful tools for indexing, collecting statistics, and ra
 
 ## ✨ Key Features
 
-- **Adaptive Scanning**  
+- **Adaptive Scanning (Auto Mode)**  
   Automatically selects the fastest search method (Simple, Threaded, or Indexed) based on the total size of the dataset.
 
 - **Multi-threaded Analysis**  
-  Uses multi-threading to significantly improve performance on medium-sized datasets.
+  Uses multi-threading (up to your CPU core count) to significantly improve performance on medium-sized datasets.
 
 - **In-Memory Indexing**  
   Supports indexing very large databases (1GB+ recommended) to enable near-instant searches after the initial indexing phase.
@@ -21,8 +21,8 @@ DataSearcher provides powerful tools for indexing, collecting statistics, and ra
 - **Detailed Statistics**  
   Displays total database size (GB), number of files, and number of folders at startup.
 
-- **Simple Command-Line Interface**  
-  Clean and intuitive CLI for selecting scan modes and entering search queries.
+- **Result Saving**  
+  Option to save all found matches to a timestamped file inside the dedicated `data/saves` directory.
 
 ---
 
@@ -30,28 +30,32 @@ DataSearcher provides powerful tools for indexing, collecting statistics, and ra
 
 DataSearcher requires **Python 3.8 or higher**.
 
-### Prerequisites
+### Prerequisites & Setup
 
-Install the required dependency for console formatting:
+#### A. Recommended (Windows)
+
+Use the provided batch installer to handle dependencies automatically:
+
+1. Run `requirements.bat`
+2. It installs Python (if missing) and required modules (`pystyle`, `requests`)
+
+#### B. Manual Installation (Linux / macOS or if A fails)
 
 ```bash
-pip install pystyle
+pip install pystyle requests
 ```
 
-### Setup
+---
 
-1. Clone the repository:
-```bash
-git clone https://github.com/chematic/DataSearcher/datasearcher.git
-cd datasearcher
-```
+## 📁 Directory Structure
 
-2. Place your data in the following directory structure:
 ```
 datasearcher/
-├── main_script.py
+├── main.py
+├── requirements.bat
 └── data/
-    └── datums/   <-- PLACE YOUR FILES HERE
+    ├── datums/   <-- PLACE YOUR FILES HERE
+    └── saves/    <-- RESULTS ARE SAVED HERE (AUTO-CREATED)
 ```
 
 ---
@@ -67,37 +71,50 @@ python main.py
 ### Interface Flow
 
 1. **Startup**  
-   Displays the application version along with statistics for the data located in `data/datums`.
+   Checks for updates and displays the application version along with statistics for `data/datums`.
 
 2. **Query Input**  
-   Enter the text string you want to search for across all files.
+   Enter the text string you want to search for.
 
-3. **Mode Selection**  
-   Choose a scanning method:
+3. **Mode Selection**
 
-| Option | Method        | Description |
-|------:|---------------|-------------|
-| **1** | Simple Scan   | Standard sequential file scan |
-| **3** | Threaded Scan | Multi-core scanning for faster execution |
-| **4** | Indexed Scan  | Loads all file contents into memory |
-| **A** | Auto Mode     | Automatically selects the optimal method (recommended) |
+| Option | Method        | Description                              |
+|------:|---------------|------------------------------------------|
+| 1     | Simple Scan   | Sequential file scan                     |
+| 3     | Threaded Scan | Multi-core scanning                      |
+| 4     | Indexed Scan  | Loads all file contents into memory      |
+| A     | Auto Mode     | Automatically selects the optimal method |
 
-4. **Results Output**  
-   Displays:
-   - Total number of matches
-   - Number of unique files containing the match
-   - Search duration
-   - Top 20 results in the format:  
-     `[filepath:line_number] content`
+4. **Results Output & Saving**
+- Displays total matches, unique files, and search duration
+- Shows the top 20 results
+- Prompts to save all results to `data/saves/`
 
 ---
 
-## ⚠️ Important Note on Indexed Scan
+## ⚠️ Important Note (Indexed Scan)
 
-The **Indexed Scan** (Option **4**) and **Auto Mode** (for large datasets) load the entire contents of the `data/datums` directory into RAM.
+The **Indexed Scan (4)** and **Auto Mode** (for large datasets) load the entire contents of `data/datums` into RAM.
 
-Ensure your system has sufficient memory to handle the reported dataset size.
+Ensure your system has sufficient available memory.
 
 ---
 
-Made by @azunoo
+## 🛡️ License & Ownership Warning
+
+**Ownership**  
+The DataSearcher tool and all its internal fragments are the exclusive property of **@azunoo (Discord / Unique ID: 1400529025239220236)**.
+
+**Restrictions**
+
+- Modification of the source code is **strictly forbidden** without explicit permission
+- Claiming ownership, removing attribution, or redistributing as your own work is **strictly forbidden**
+
+---
+
+**Auto Updater Notice**
+`c.py` will not modify the source code itself, at least for the time being.
+
+---
+
+Made by **@azunoo**
