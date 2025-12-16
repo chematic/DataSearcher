@@ -8,6 +8,11 @@ By using the DataSearcher software (the "Software"), you agree to be bound by th
 
 The Software is provided "as is" for general purpose scanning and file analysis. The Software is licensed, not sold. You are granted a non-exclusive, non-transferable, revocable license to use the Software strictly in accordance with these terms.
 
+### 🚫 C. Ownership and Distribution Restrictions (MAJOR RESTRICTION)
+
+* **Paternity Claim:** You MUST NOT claim authorship, creation, or ownership of the Software or its core components (including the fragmented source code). The original author retains all intellectual property rights.
+* **Resale and Redistribution:** You MUST NOT copy, reproduce, resell, redistribute, lease, or sublicense the Software to any third party, either in its original form or modified form.
+
 ## 3. Mandatory Maintenance & Modification Restrictions
 
 The internal architecture of the Software is highly optimized, fragmented, and relies on strict dependencies. Any modification to the core structure voids this license and is strictly prohibited.
@@ -24,7 +29,7 @@ The following modifications will permanently disable the Software and result in 
 
 The Software includes an integrated Remote Update System (R.U.S.) to ensure security and functionality. Tampering with the R.U.S. is strictly forbidden:
 
-* **GitHub API URL:** You MUST NOT modify the GitHub API URL (`J` variable in `data/c.py`). This URL is the sole hardcoded endpoint for verifying official Software releases.
+* **GitHub API URL:** You MUST NOT modify the GitHub API URL (variable `J` in `data/c.py`). This URL is the sole hardcoded endpoint for verifying official Software releases.
 * **Asset Naming:** When distributing or modifying local files, you MUST ensure that file names (e.g., `m.py`, `i.py`) remain unchanged, as the R.U.S. dynamically searches for these exact names during an update.
 
 ---
@@ -33,6 +38,15 @@ The Software includes an integrated Remote Update System (R.U.S.) to ensure secu
 ## 1. Acceptation des Conditions
 
 En utilisant le logiciel DataSearcher (le « Logiciel »), vous acceptez d'être lié par les présentes Conditions d'Utilisation et toutes les lois et réglementations applicables. Si vous n'acceptez pas ces conditions, l'accès ou l'utilisation du Logiciel vous est interdit.
+
+## 2. Licence d'Utilisation Générale
+
+Le Logiciel est fourni « tel quel » pour l'analyse générale de fichiers. Le Logiciel est concédé sous licence, non vendu. Une licence non exclusive, non transférable et révocable vous est accordée pour utiliser le Logiciel en stricte conformité avec ces termes.
+
+### 🚫 C. Restrictions de Propriété et de Distribution (RESTRICTION MAJEURE)
+
+* **Revendication de Paternité :** Vous NE DEVEZ PAS revendiquer la paternité, la création ou la propriété du Logiciel ou de ses composants de base (y compris le code source fragmenté). L'auteur original conserve tous les droits de propriété intellectuelle.
+* **Revente et Redistribution :** Vous NE DEVEZ PAS copier, reproduire, revendre, redistribuer, louer ou sous-licencier le Logiciel à des tiers, que ce soit sous sa forme originale ou modifiée.
 
 ## 3. Restrictions Obligatoires de Maintenance et de Modification
 
@@ -59,6 +73,15 @@ Le Logiciel comprend un Système de Mise à Jour à Distance (R.U.S.) intégré 
 ## 1. Aceptación de los Términos
 
 Al utilizar el software DataSearcher (el "Software"), usted acepta regirse por estos Términos de Uso y todas las leyes y regulaciones aplicables. Si no está de acuerdo con alguno de estos términos, se le prohíbe usar o acceder al Software.
+
+## 2. Licencia de Uso General
+
+El Software se proporciona "tal cual" para el análisis general de archivos. El Software se licencia, no se vende. Se le otorga una licencia no exclusiva, no transferible y revocable para utilizar el Software estrictamente de acuerdo con estos términos.
+
+### 🚫 C. Restricciones de Propiedad y Distribución (RESTRICCIÓN MAYOR)
+
+* **Reclamación de Autoría:** NO DEBE reclamar la autoría, creación o propiedad del Software o de sus componentes centrales (incluido el código fuente fragmentado). El autor original conserva todos los derechos de propiedad intelectual.
+* **Reventa y Redistribución:** NO DEBE copiar, reproducir, revender, redistribuir, arrendar o sublicenciar el Software a terceros, ya sea en su forma original o modificada.
 
 ## 3. Restricciones Obligatorias de Mantenimiento y Modificación
 
